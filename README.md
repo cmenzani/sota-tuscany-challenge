@@ -3,7 +3,7 @@
 
 Bozza **MANIFESTO** 
 
-**Obbiettivi:**
+**Obiettivi:**
 
 Incentivare l'attività SOTA nella regione.
 Incentivare i NEW ONE
