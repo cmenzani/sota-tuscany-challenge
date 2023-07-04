@@ -37,3 +37,9 @@ Legge il numero di elementi/referenze presenti nel file tuscanysummit.json cha h
                 CIME ATTIVATE:    XX
                 
                 CIME DA ATTIVARE: YY
+
+
+**Note API**
+
+recupera l'Honor Roll degli Attivatori italiani
+https://api-db.sota.org.uk/admin/activator_roll?associationID=54
