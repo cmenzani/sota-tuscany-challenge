@@ -6,7 +6,7 @@ import json
 url = "https://storage.sota.org.uk/summitslist.csv"
 
 # URL dell'endpoint API per ottenere i dati degli attivatori
-api_url = "https://api-db.sota.org.uk/api/summits/{assocCode}/{summitCode}"
+api_url = "https://api2.sota.org.uk/api/summits/{summitCode}"
 
 # Dizionario per memorizzare i nominativi degli attivatori unici
 unique_activators = {}
@@ -36,7 +36,8 @@ if response.status_code == 200:
             # Verifica se la referenza inizia con "I/TO-"
             if summit_code.startswith("I/TO-"):
                 # Costruisci l'URL dell'endpoint API sostituendo i segnaposto con i valori corretti
-                api_endpoint = api_url.replace("{assocCode}", assoc_code).replace("{summitCode}", summit_code)
+            #    api_endpoint = api_url.replace("{assocCode}", assoc_code).replace("{summitCode}", summit_code)
+                api_endpoint = api_url.replace("{summitCode}", summit_code)
 
                 # Effettua la chiamata GET all'endpoint API
                 api_response = requests.get(api_endpoint)
