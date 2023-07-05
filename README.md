@@ -45,3 +45,9 @@ recupera l'Honor Roll degli Attivatori italiani
 
 
 https://api-db.sota.org.uk/admin/activator_roll?associationID=54
+
+presenta l'elenco delle referenze e cliccando su ognuna si ottiene l'elenco degli attivatori
+
+  https://sotl.as/summits/I/TO
+ 
+
