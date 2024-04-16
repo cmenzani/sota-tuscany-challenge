@@ -30,13 +30,6 @@ Legge il file "https://storage.sota.org.uk/summitslist.csv" che giornalmente vie
 Legge il numero di elementi/referenze presenti nel file tuscanysummit.json cha hanno il campo ActivationCount==0 chesignifica che quella cime non è mai stata attivata.
             In questo modo potremo sempre tenere giornalmente aggiornata la dashboard: 
              
-                SITUAZIONE AGGIORNATA al gg/mm/aaaa
-                
-                CIME ATTIVABILI: 227
-                
-                CIME ATTIVATE:    XX
-                
-                CIME DA ATTIVARE: YY
             ======================================
             Data elaborazione: 2024-04-16 11:31:27
             ======================================
