@@ -1,16 +1,13 @@
 """
 16/04/2024
-deve essere fatto un controllo con i dati presenti su https://www.sotamaps.org/
-perchè lì risultano 227 cime valide, mentre il risultato del programma attualmente è
-il seguente:
+Questa versione ad oggi riporta questi risultati:
 
-       "Totale cime SOTA in Toscana": 236,
-        "Cime mai attivate": 108,
-        "Totale cime Inattive": 11,
-        "Totale cime Valide": 225
+Totale cime SOTA in Toscana: 238
+Totale cime Non Valide/Inactive: 11
+Totale cime Valide: 227
+Cime mai attivate Valide: 115
 
-RISULTATI DA VERIFICARE
-
+che ad un controllo sia su SOTL.AS che SOTAMPAS.ORG risultano corretti
 """
 import json
 
@@ -20,28 +17,25 @@ with open('tuscanysummit.json', 'r') as file:
     data = json.load(file)
 
     # Crea una lista per gli elementi JSON con "ActivationCount" uguale a "0"
-    filtered_data = [item for item in data if item.get("ActivationCount") == "0"]
+    never_activated = [item for item in data if item.get("ActivationCount") == "0"]
 
-    # Conta tutti gli elementi che hanno il campo "ValidTo" diverso da 31/12/2099
-    count_inactive = sum(1 for item in data if item.get("ValidTo") != "31/12/2099")
+    # Identifica le cime non valide
+    inactive_summits = [item for item in data if item.get("ValidTo") != "31/12/2099"]
 
-    # Calcola il totale di elementi mai attivati escludendo quelli inattivi
-    total_never_activated = len(filtered_data) - count_inactive
+    # Identifica le cime mai attivate che sono valide
+    valid_never_activated = [item for item in never_activated if item.get("ValidTo") == "31/12/2099"]
 
-    # Calcola il totale di elementi trovati
+    # Calcola i totali
     total_elements = {
-        "Totale cime SOTA in Toscana": len(data),  # Numero totale di elementi nel file JSON
-        "Cime mai attivate": total_never_activated,
-        "Totale cime Inattive": count_inactive,
-        "Totale cime Valide": len(data) - count_inactive  # Calcola le cime con "ValidTo" = 31/12/2099
+        "Totale cime SOTA in Toscana": len(data),
+        "Cime mai attivate": len(never_activated),
+        "Totale cime Inactive": len(inactive_summits),
+        "Totale cime Valide": len(data) - len(inactive_summits),
+        "Cime mai attivate Valide": len(valid_never_activated)  # Correttamente filtrate
     }
 
-    # Combina i dati filtrati con il conteggio totale in un unico oggetto
-    output_data = {"filtered_data": filtered_data, "total_elements": total_elements}
-
-# Scrive tutto in un unico file JSON
-with open('tuscanyzeroactivation.json', 'w') as outfile:
-    json.dump(output_data, outfile, indent=4)
-
-# Stampa a console per verifica immediata
-print(json.dumps(output_data, indent=4))
+# Stampa a console i totali per facile riferimento
+print(f"Totale cime SOTA in Toscana: {total_elements['Totale cime SOTA in Toscana']}")
+print(f"Totale cime Non Valide/Inactive: {total_elements['Totale cime Inactive']}")
+print(f"Totale cime Valide: {total_elements['Totale cime Valide']}")
+print(f"Cime mai attivate Valide: {total_elements['Cime mai attivate Valide']}")  # Stampato il valore corretto

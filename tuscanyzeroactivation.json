@@ -894,6 +894,25 @@
             "ActivationCall": ""
         },
         {
+            "SummitCode": "I/TO-100",
+            "AssociationName": "Italy",
+            "RegionName": "Toscana",
+            "SummitName": "Monte della Croce",
+            "AltM": "895",
+            "AltFt": "2936",
+            "GridRef1": "12.1166",
+            "GridRef2": "43.2821",
+            "Longitude": "12.11660",
+            "Latitude": "43.28210",
+            "Points": "2",
+            "BonusPoints": "0",
+            "ValidFrom": "01/10/2017",
+            "ValidTo": "31/12/2099",
+            "ActivationCount": "0",
+            "ActivationDate": "",
+            "ActivationCall": ""
+        },
+        {
             "SummitCode": "I/TO-102",
             "AssociationName": "Italy",
             "RegionName": "Toscana",
@@ -2263,9 +2282,9 @@
         }
     ],
     "total_elements": {
-        "Totale cime SOTA in Toscana": 236,
-        "Cime mai attivate": 108,
-        "Totale cime Inattive": 11,
-        "Totale cime Valide": 225
+        "Totale cime SOTA in Toscana": 238,
+        "Cime mai attivate": 109,
+        "Totale cime Inactive": 11,
+        "Totale cime Valide": 227
     }
 }

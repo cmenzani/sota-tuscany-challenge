@@ -1881,6 +1881,25 @@
         "ActivationCall": "I/OK2PDT/P"
     },
     {
+        "SummitCode": "I/TO-100",
+        "AssociationName": "Italy",
+        "RegionName": "Toscana",
+        "SummitName": "Monte della Croce",
+        "AltM": "895",
+        "AltFt": "2936",
+        "GridRef1": "12.1166",
+        "GridRef2": "43.2821",
+        "Longitude": "12.11660",
+        "Latitude": "43.28210",
+        "Points": "2",
+        "BonusPoints": "0",
+        "ValidFrom": "01/10/2017",
+        "ValidTo": "31/12/2099",
+        "ActivationCount": "0",
+        "ActivationDate": "",
+        "ActivationCall": ""
+    },
+    {
         "SummitCode": "I/TO-101",
         "AssociationName": "Italy",
         "RegionName": "Toscana",
@@ -3760,6 +3779,25 @@
         "ActivationCount": "14",
         "ActivationDate": "03/10/2023",
         "ActivationCall": "IA5/HB9CRY/P"
+    },
+    {
+        "SummitCode": "I/TO-200",
+        "AssociationName": "Italy",
+        "RegionName": "Toscana",
+        "SummitName": "Monte Orello",
+        "AltM": "376",
+        "AltFt": "1234",
+        "GridRef1": "10.3214",
+        "GridRef2": "42.7803",
+        "Longitude": "10.32140",
+        "Latitude": "42.78030",
+        "Points": "1",
+        "BonusPoints": "0",
+        "ValidFrom": "01/10/2017",
+        "ValidTo": "31/12/2099",
+        "ActivationCount": "10",
+        "ActivationDate": "03/10/2023",
+        "ActivationCall": "IA5/HB9BHU/P"
     },
     {
         "SummitCode": "I/TO-201",
