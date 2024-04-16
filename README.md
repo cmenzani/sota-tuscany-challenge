@@ -37,6 +37,13 @@ Legge il numero di elementi/referenze presenti nel file tuscanysummit.json cha h
                 CIME ATTIVATE:    XX
                 
                 CIME DA ATTIVARE: YY
+            ======================================
+            Data elaborazione: 2024-04-16 11:31:27
+            ======================================
+            Totale cime SOTA in Toscana: 238
+            Totale cime Non Valide/Inactive: 11
+            Totale cime Valide: 227
+            Cime mai attivate Valide: 115
 
 
 **Note API**
