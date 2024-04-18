@@ -1,3 +1,7 @@
+"""
+.\venv\Scripts\activate
+"""
+
 import csv
 import requests
 import json
