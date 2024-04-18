@@ -48,8 +48,10 @@ Legge *tuscanysummit.json*  e per ogni cima che è stata attivata almeno una vol
 
 Al momento per aggiornare le statistiche con le ultime "prime attivazioni" è necessario far girare in sequenza i 3 script:
 
-*sotatc.py*   
+*sotatc.py* 
+  
 *sotazeroactivation.py*
+
 *sotafirstactivator.py*
 
 
