@@ -27,7 +27,7 @@ Legge il file "https://storage.sota.org.uk/summitslist.csv" che giornalmente vie
 
 *sotazeroactivation.py*
 
-Legge il numero di elementi/referenze presenti nel file tuscanysummit.json cha hanno il campo ActivationCount==0 chesignifica che quella cime non è mai stata attivata.
+Legge il numero di elementi/referenze presenti nel file *tuscanysummit.json* cha hanno il campo ActivationCount==0 chesignifica che quella cime non è mai stata attivata.
             In questo modo potremo sempre tenere giornalmente aggiornata la dashboard: 
              
             ======================================
@@ -37,6 +37,22 @@ Legge il numero di elementi/referenze presenti nel file tuscanysummit.json cha h
             Totale cime Non Valide/Inactive: 11
             Totale cime Valide: 227
             Cime mai attivate Valide: 115
+
+
+*sotafirstactivator.py*
+
+Legge *tuscanysummit.json*  e per ogni cima che è stata attivata almeno una volta (quindi esclude tutte le referenze che hanno il campo ActivationCount = 0) va a leggere mediante API un set di dati fra i quali ci sono quelli relativi alla **prima attivazione**
+
+
+**Note OPERATIVE**
+
+Al momento per aggiornare le statistiche con le ultime "prime attivazioni" è necessario far girare in sequenza i 3 script:
+
+*sotatc.py*   
+*sotazeroactivation.py*
+*sotafirstactivator.py*
+
+
 
 
 **Note API**
