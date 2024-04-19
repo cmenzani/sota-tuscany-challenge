@@ -3,38 +3,7 @@
 """
 
 
-"""
 
-import requests
-import json
-
-# Disabilita i warning SSL, non raccomandato per la produzione
-requests.packages.urllib3.disable_warnings(requests.packages.urllib3.exceptions.InsecureRequestWarning)
-
-# Funzione per ottenere l'ID della cima
-def get_summit_id(summit_code):
-    url = f"https://api-db.sota.org.uk/admin/find_summit?search={summit_code}"
-    response = requests.get(url, verify=False)  # SSL verify is set to False, use with caution
-    data = response.json()
-    return data[0]["SummitId"] if data else None
-
-# Funzione per ottenere la storia delle attivazioni di una cima
-def get_summit_activation_history(summit_id):
-    url = f"https://api-db.sota.org.uk/admin/summit_history?summitID={summit_id}"
-    response = requests.get(url, verify=False)  # SSL verify is set to False, use with caution
-    data = response.json()
-    return data
-
-# Esempio di uso
-summit_code = "ZL3/OT-371"  # Sostituire con il codice della cima desiderata
-summit_id = get_summit_id(summit_code)
-
-if summit_id:
-    activation_history = get_summit_activation_history(summit_id)
-    print(json.dumps(activation_history, indent=4))  # Stampa il risultato formattato
-else:
-    print("Summit ID not found.")
-"""
 import requests
 import json
 from datetime import datetime

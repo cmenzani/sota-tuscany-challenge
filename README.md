@@ -25,9 +25,11 @@ Ogni 5 attivazioni NEW ONE l'attivatore riceverà dal team del SOTA Tuscany Chal
 
 Legge il file "https://storage.sota.org.uk/summitslist.csv" che giornalmente viene aggiornato da SOTA.UK estrae le sole referenze della Toscana creando il file *tuscanysummit.json*
 
-*sotazeroactivation.py*
+*tuscanydashboard.py*
+
 
 Legge il numero di elementi/referenze presenti nel file *tuscanysummit.json* cha hanno il campo ActivationCount==0 chesignifica che quella cime non è mai stata attivata.
+            Genera il file *tuscanydashboard.json* che contiene le informazioni di riepilogo.
             In questo modo potremo sempre tenere giornalmente aggiornata la dashboard: 
              
             ======================================
@@ -39,9 +41,10 @@ Legge il numero di elementi/referenze presenti nel file *tuscanysummit.json* cha
             Cime mai attivate Valide: 115
 
 
-*sotafirstactivator.py*
+*sotafirstactivator-v2.py*
 
 Legge *tuscanysummit.json*  e per ogni cima che è stata attivata almeno una volta (quindi esclude tutte le referenze che hanno il campo ActivationCount = 0) va a leggere mediante API un set di dati fra i quali ci sono quelli relativi alla **prima attivazione**
+Genera il file *firstactivator-v2.json*
 
 
 **Note OPERATIVE**
@@ -52,7 +55,7 @@ Al momento per aggiornare le statistiche con le ultime "prime attivazioni" è ne
   
 *sotazeroactivation.py*
 
-*sotafirstactivator.py*
+*sotafirstactivator-v2.py*
 
 
 

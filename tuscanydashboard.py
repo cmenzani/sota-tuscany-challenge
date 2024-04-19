@@ -1,14 +1,8 @@
 """
-16/04/2024
-Questa versione ad oggi riporta questi risultati:
-
-Totale cime SOTA in Toscana: 238
-Totale cime Non Valide/Inactive: 11
-Totale cime Valide: 227
-Cime mai attivate Valide: 115
-
-che ad un controllo sia su SOTL.AS che SOTAMPAS.ORG risultano corretti
+.\venv\Scripts\activate
 """
+
+
 import json
 import datetime
 
@@ -39,10 +33,9 @@ with open('tuscanysummit.json', 'r') as file:
         "Cime mai attivate Valide": len(valid_never_activated)  # Correttamente filtrate
     }
 
-    # Scrive tutto in un unico file JSON, includendo il timestamp
-    output_data = {"Timestamp": current_datetime, "Data": total_elements}
-    with open('tuscanyzeroactivation.json', 'w') as outfile:
-        json.dump(output_data, outfile, indent=4)
+    # Scrive tutto in un unico file JSON, eliminando la voce "Timestamp" duplicata
+    with open('tuscanydashboard.json', 'w') as outfile:
+        json.dump(total_elements, outfile, indent=4)
 
     # Stampa a console con timestamp
     print("======================================")
