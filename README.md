@@ -46,6 +46,10 @@ Legge il numero di elementi/referenze presenti nel file *tuscanysummit.json* cha
 Legge *tuscanysummit.json*  e per ogni cima che è stata attivata almeno una volta (quindi esclude tutte le referenze che hanno il campo ActivationCount = 0) va a leggere mediante API un set di dati fra i quali ci sono quelli relativi alla **prima attivazione**
 Genera il file *firstactivator-v2.json*
 
+*sotatuscanynewone.py*
+
+Legge *firstactivator-v2.json* e crea l'elenco dei nominativi con il loro totale di New One delle cime SOTA della Toscana
+ 
 
 **Note OPERATIVE**
 
@@ -56,6 +60,10 @@ Al momento per aggiornare le statistiche con le ultime "prime attivazioni" è ne
 *sotazeroactivation.py*
 
 *sotafirstactivator-v2.py*
+
+"sotatuscanynewone.py*
+
+
 
 
 
