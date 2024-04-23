@@ -56,6 +56,7 @@ Legge *firstactivator-v2.json* e crea l'elenco dei nominativi con il loro totale
 La prima operazione è **rinominare i file** 
 
 tuscanydashboard.json
+
 firstactivator-v2.json
 
 e **spostarli** nella directory *backup*.
