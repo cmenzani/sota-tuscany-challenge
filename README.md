@@ -13,7 +13,7 @@ Raggiungere entro la fine del 2025 l'attivazione di tutte le 227(*) cime della T
 
 **Riconoscimenti/Award:**
 
-Ogni 5 attivazioni NEW ONE l'attivatore riceverà dal team del SOTA Tuscany Challenge una T-shirt ed un Buono AMAZON da €30
+DA DEFINIRE
 
 
 
