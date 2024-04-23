@@ -53,19 +53,32 @@ Legge *firstactivator-v2.json* e crea l'elenco dei nominativi con il loro totale
 
 **Note OPERATIVE**
 
-Al momento per aggiornare le statistiche con le ultime "prime attivazioni" è necessario far girare in sequenza i 3 script:
+La prima operazione è rinominare i file 
 
-*sotatc.py* 
-  
-*sotazeroactivation.py*
+tuscanydashboard.json
+firstactivator-v2.json
 
+e spostarli nella directory *backup*.
+Per far questo lanciare :
+
+renamemovejson.py
+
+Al momento per aggiornare le statistiche con le ultime "prime attivazioni" è necessario far girare  questo script:
+
+*sotatcgo.py*
+
+che al suo interno lancerà in sequenza questi script:
+
+*sotatc.py*  
 *sotafirstactivator-v2.py*
+*sotatuscanynewone.py*
+*tuscanydashboard.py*
 
-"sotatuscanynewone.py*
+**Note INTERNA** 
 
+Per aggiornare i file vedere documentazione ONENOTE:
 
-
-
+SOTA TUSCANY CHALLENGE: Dropbox file
 
 
 **Note API**
