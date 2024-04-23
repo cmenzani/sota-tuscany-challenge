@@ -53,17 +53,17 @@ Legge *firstactivator-v2.json* e crea l'elenco dei nominativi con il loro totale
 
 **Note OPERATIVE**
 
-La prima operazione è rinominare i file 
+La prima operazione è **rinominare i file** 
 
 tuscanydashboard.json
 firstactivator-v2.json
 
-e spostarli nella directory *backup*.
+e **spostarli** nella directory *backup*.
 Per far questo lanciare :
 
 renamemovejson.py
 
-Al momento per aggiornare le statistiche con le ultime "prime attivazioni" è necessario far girare  questo script:
+Per **aggiornare** le statistiche con le ultime "prime attivazioni" è necessario far girare  questo script:
 
 *sotatcgo.py*
 
