@@ -46,7 +46,7 @@ Legge il numero di elementi/referenze presenti nel file *tuscanysummit.json* cha
 Legge *tuscanysummit.json*  e per ogni cima che è stata attivata almeno una volta (quindi esclude tutte le referenze che hanno il campo ActivationCount = 0) va a leggere mediante API un set di dati fra i quali ci sono quelli relativi alla **prima attivazione**
 Genera il file *firstactivator-v2.json*
 
-*sotatuscanynewone.py*
+    *sotatuscanynewone.py*
 
 Legge *firstactivator-v2.json* e crea l'elenco dei nominativi con il loro totale di New One delle cime SOTA della Toscana
  
@@ -55,31 +55,31 @@ Legge *firstactivator-v2.json* e crea l'elenco dei nominativi con il loro totale
 
 La prima operazione è **rinominare i file** 
 
-tuscanydashboard.json
+    *tuscanydashboard.json*
 
-firstactivator-v2.json
+    *firstactivator-v2.json*
 
 e **spostarli** nella directory *backup*.
 Per far questo lanciare :
 
-renamemovejson.py
+    *renamemovejson.py*
 
 Per **aggiornare** le statistiche con le ultime "prime attivazioni" è necessario far girare  questo script:
 
-*sotatcgo.py*
+    *sotatcgo.py*
 
 che al suo interno lancerà in sequenza questi script:
 
-*sotatc.py*  
-*sotafirstactivator-v2.py*
-*sotatuscanynewone.py*
-*tuscanydashboard.py*
+    *sotatc.py*  
+    *sotafirstactivator-v2.py*
+    *sotatuscanynewone.py*
+    *tuscanydashboard.py*
 
 **Note INTERNA** 
 
 Per aggiornare i file vedere documentazione ONENOTE:
 
-SOTA TUSCANY CHALLENGE: Dropbox file
+  *SOTA TUSCANY CHALLENGE: Dropbox file*
 
 
 **Note API**
