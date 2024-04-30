@@ -1762,9 +1762,9 @@
         "BonusPoints": "0",
         "ValidFrom": "01/10/2017",
         "ValidTo": "31/12/2099",
-        "ActivationCount": "0",
-        "ActivationDate": "",
-        "ActivationCall": ""
+        "ActivationCount": "1",
+        "ActivationDate": "28/04/2024",
+        "ActivationCall": "IK5VYZ"
     },
     {
         "SummitCode": "I/TO-094",
@@ -3776,9 +3776,9 @@
         "BonusPoints": "0",
         "ValidFrom": "01/10/2017",
         "ValidTo": "31/12/2099",
-        "ActivationCount": "14",
-        "ActivationDate": "03/10/2023",
-        "ActivationCall": "IA5/HB9CRY/P"
+        "ActivationCount": "16",
+        "ActivationDate": "24/04/2024",
+        "ActivationCall": "IA5/OE7MPN/P"
     },
     {
         "SummitCode": "I/TO-200",
